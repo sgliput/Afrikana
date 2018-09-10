@@ -1,0 +1,57 @@
+body{
+    text-align: center;
+    background-color: #e6520e;
+    font-family: 'Russo One', sans-serif;
+}
+
+header{
+    margin: 10px auto 10px auto;
+}
+
+h1, h3{
+    margin: 0 auto;
+    
+    background-color: white;
+    border: 3px ridge black;
+    border-radius: 5px;
+}
+
+h3{
+    width: 20%;
+}
+
+.video{
+    margin: 0 auto;
+}
+
+.images, .videos{
+    padding: 2%;
+    background-color: white;
+    border: 5px ridge black;
+    border-radius: 5px;
+}
+
+.thumbnail{
+    padding: 7px;
+}
+
+.thumbnail:hover{
+    
+    box-shadow: 0 0 3pt 4pt black inset;
+  }
+
+
+  @media screen and (max-width: 991px) {
+    #video1 {
+      margin-bottom: 10px; 
+    }
+    h3{
+        width: 40%;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .thumbnail{
+        padding: 10px 0 10px 0;
+    }
+  }
