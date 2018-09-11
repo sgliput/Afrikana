@@ -8,9 +8,12 @@ header{
     margin: 10px auto 10px auto;
 }
 
+h1{
+    padding: 7px;
+}
+
 h1, h3{
     margin: 0 auto;
-    
     background-color: white;
     border: 3px ridge black;
     border-radius: 5px;
@@ -31,6 +34,10 @@ h3{
     border-radius: 5px;
 }
 
+figure{
+    margin: 0 auto 50px auto;
+}
+
 .thumbnail{
     padding: 7px;
 }
@@ -40,6 +47,51 @@ h3{
     box-shadow: 0 0 3pt 4pt black inset;
   }
 
+.footer{
+    background-color: #8f3809;
+    height: 50px;
+}
+
+#credit{
+    text-align: right;
+    color: white;
+    margin-right: 15px;
+    padding-top: 10px;
+}
+
+.biggerimgHolder{
+    background-color: white;
+    border: 5px ridge black;
+    z-index: 1;
+    height: 60%;
+    width: 90%;
+    display: none;
+}
+
+.biggerimg{
+    padding: 40px 0 40px 25px;
+}
+
+.fa-times{
+    font-size: 3rem;
+    text-align: right;
+    position: relative;
+    top: -5.9em;
+    left: .7em;
+}
+
+.thumbnail:hover, .fa-times:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1199px) {
+    .fa-times{
+        top: -4.9em;
+        left: .6em;
+    }
+}
+
+
 
   @media screen and (max-width: 991px) {
     #video1 {
@@ -48,10 +100,27 @@ h3{
     h3{
         width: 40%;
     }
+    .fa-times{
+        font-size: 2rem;
+        top: -5.7em;
+    left: .7em;
+    }
   }
 
   @media screen and (max-width: 767px) {
-    .thumbnail{
-        padding: 10px 0 10px 0;
+    .fa-times{
+        top: -4.6em;
+        left: .5em;
+    }
+    .biggerimgHolder{
+        width: 100%;
     }
   }
+
+  @media screen and (max-width: 525px) {
+    .fa-times{
+        top: -3.6em;
+    }
+  }
+
+  
